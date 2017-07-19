@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="//player.dacast.com/js/player.js" id=CONTENT_ID player='none' class="dacast-video">
+        </script>
+        <title>Welcome!</title>
+    </head>
+    <body>
+        <div id="test">   
+        </div>
+    </body>
+    <script>
+        $(function(){
+        var myPlayer = dacast(CONTENT_ID, 'test', {player:'none'});
+          myPlayer.onReady(function(){
+            myPlayer.getSrc(function(e){console.log(e)});
+          });
+        });
+    </script>
+</html>
