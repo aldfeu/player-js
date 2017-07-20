@@ -8,14 +8,17 @@
         <title>Welcome!</title>
     </head>
     <body>
-        <div id="test">   
+        <div id="test">  
+            <video width="352" height="198" controls>
+                <source id="channel" type="application/x-mpegURL">
+            </video>
         </div>
     </body>
     <script>
         $(function(){
         var myPlayer = dacast(CONTENT_ID, 'test', {player:'none'});
           myPlayer.onReady(function(){
-            myPlayer.getSrc(function(e){console.log(e)});
+            myPlayer.getSrc(function(e){ $("#channel").attr('src', e.url); console.log(e) });
           });
         });
     </script>
