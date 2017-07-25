@@ -1,2 +1,2 @@
 # player-js
-Player library demos
+Player library demos for HTML5 native
