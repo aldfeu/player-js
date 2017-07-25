@@ -9,7 +9,7 @@ To start implementing the DaCast library, you have two methods:
 
 ## Embed code
 
-```html5
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -28,7 +28,7 @@ To start implementing the DaCast library, you have two methods:
 
 ## Dynamic loading
 
-```html5
+```html
 <!DOCTYPE html>
 <html>
   <head>
