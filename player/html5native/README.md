@@ -35,7 +35,7 @@ To start implementing the DaCast library, you have two methods:
     <script src="//player.dacast.com/js/player.js"></script>
   </head>
   <script>
-    var myM3u8 = dacast('CONTENT_ID', 'test', {player:'html5native'});
+    var myM3u8 = dacast('CONTENT_ID', 'DIV', {player:'html5native'});
       myM3u8.onReady( function() {
         myM3u8.getSrc( function(e) {
           console.log(e.url); //Containing m3u8 link with security.
