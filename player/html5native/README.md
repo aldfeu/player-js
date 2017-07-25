@@ -32,7 +32,7 @@ To start implementing the DaCast library, you have two methods:
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="//player.dacast.com/js/player.js">
+    <script src="//player.dacast.com/js/player.js"></script>
   </head>
   <script>
     var myM3u8 = dacast('CONTENT_ID', 'test', {player:'html5native'});
